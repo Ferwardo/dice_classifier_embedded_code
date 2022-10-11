@@ -22,10 +22,12 @@ limitations under the License.
 #include "tensorflow/lite/micro/micro_interpreter.h"
 #include "tensorflow/lite/micro/micro_mutable_op_resolver.h"
 #include "tensorflow/lite/schema/schema_generated.h"
+#include "tensorflow/lite/micro/all_ops_resolver.h"
 
 #include "fsl_debug_console.h"
 #include "model.h"
-#include "model_data.h"
+#include "dice_classifier.h"
+//#include "model_data.h"
 
 static tflite::ErrorReporter* s_errorReporter = nullptr;
 static const tflite::Model* s_model = nullptr;
@@ -36,7 +38,8 @@ extern tflite::MicroOpResolver &MODEL_GetOpsResolver(tflite::ErrorReporter* erro
 
 // An area of memory to use for input, output, and intermediate arrays.
 // (Can be adjusted based on the model needs.)
-constexpr int kTensorArenaSize = (256 + 128) * 1024;
+//constexpr int kTensorArenaSize = (256 + 128) * 1024;
+constexpr int kTensorArenaSize = 200000;
 static uint8_t s_tensorArena[kTensorArenaSize] __ALIGNED(16);
 
 status_t MODEL_Init(void)
@@ -49,7 +52,7 @@ status_t MODEL_Init(void)
 
     // Map the model into a usable data structure. This doesn't involve any
     // copying or parsing, it's a very lightweight operation.
-    s_model = tflite::GetModel(model_data);
+    s_model = tflite::GetModel(dice_classifier_tflite);
     if (s_model->version() != TFLITE_SCHEMA_VERSION)
     {
         TF_LITE_REPORT_ERROR(s_errorReporter,
@@ -67,7 +70,8 @@ status_t MODEL_Init(void)
     //
     // tflite::AllOpsResolver resolver;
     // NOLINTNEXTLINE(runtime-global-variables)
-    tflite::MicroOpResolver &micro_op_resolver = MODEL_GetOpsResolver(s_errorReporter);
+    //tflite::MicroOpResolver &micro_op_resolver = MODEL_GetOpsResolver(s_errorReporter);
+    tflite::AllOpsResolver micro_op_resolver;
 
     // Build an interpreter to run the model with.
     static tflite::MicroInterpreter static_interpreter(
