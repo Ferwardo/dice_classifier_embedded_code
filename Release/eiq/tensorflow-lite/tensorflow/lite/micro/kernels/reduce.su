@@ -1,0 +1,9 @@
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/reduce.cpp:48:7:void* tflite::ops::micro::reduce::InitReduce(TfLiteContext*, const char*, size_t)	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/reduce.cpp:272:14:TfLiteStatus tflite::ops::micro::reduce::EvalMax(TfLiteContext*, TfLiteNode*)	88	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/reduce.cpp:150:14:TfLiteStatus tflite::ops::micro::reduce::EvalMean(TfLiteContext*, TfLiteNode*)	448	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/reduce.cpp:52:14:TfLiteStatus tflite::ops::micro::reduce::PrepareSimple(TfLiteContext*, TfLiteNode*)	48	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/reduce.cpp:85:14:TfLiteStatus tflite::ops::micro::reduce::PrepareMax(TfLiteContext*, TfLiteNode*)	40	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/reduce.cpp:110:14:TfLiteStatus tflite::ops::micro::reduce::PrepareMeanOrSum(TfLiteContext*, TfLiteNode*)	32	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/reduce.cpp:138:6:void tflite::ops::micro::reduce::ResolveAxis(const int*, int, tflite::MeanParams*)	4	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/reduce.cpp:329:20:TfLiteRegistration tflite::ops::micro::Register_MEAN()	8	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/reduce.cpp:340:20:TfLiteRegistration tflite::ops::micro::Register_REDUCE_MAX()	8	static

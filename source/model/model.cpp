@@ -39,7 +39,7 @@ extern tflite::MicroOpResolver &MODEL_GetOpsResolver(tflite::ErrorReporter* erro
 // An area of memory to use for input, output, and intermediate arrays.
 // (Can be adjusted based on the model needs.)
 //constexpr int kTensorArenaSize = (256 + 128) * 1024;
-constexpr int kTensorArenaSize = 200000;
+constexpr int kTensorArenaSize = 1500000;
 static uint8_t s_tensorArena[kTensorArenaSize] __ALIGNED(16);
 
 status_t MODEL_Init(void)

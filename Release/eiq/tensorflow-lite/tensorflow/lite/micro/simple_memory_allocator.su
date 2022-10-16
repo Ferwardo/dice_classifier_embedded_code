@@ -1,0 +1,18 @@
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:62:1:virtual tflite::SimpleMemoryAllocator::~SimpleMemoryAllocator()	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:122:6:virtual void tflite::SimpleMemoryAllocator::DeallocateTemp(uint8_t*)	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:137:6:virtual void tflite::SimpleMemoryAllocator::ResetTempAllocations()	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:106:10:virtual uint8_t* tflite::SimpleMemoryAllocator::AllocateTemp(size_t, size_t)	24	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:89:10:virtual uint8_t* tflite::SimpleMemoryAllocator::AllocateFromTail(size_t, size_t)	24	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:127:6:virtual bool tflite::SimpleMemoryAllocator::IsAllTempDeallocated()	8	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:64:14:virtual TfLiteStatus tflite::SimpleMemoryAllocator::SetHeadBufferSize(size_t, size_t)	24	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:30:1:tflite::SimpleMemoryAllocator::SimpleMemoryAllocator(tflite::ErrorReporter*, uint8_t*, uint8_t*)	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:40:1:tflite::SimpleMemoryAllocator::SimpleMemoryAllocator(tflite::ErrorReporter*, uint8_t*, size_t)	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:46:24:static tflite::SimpleMemoryAllocator* tflite::SimpleMemoryAllocator::Create(tflite::ErrorReporter*, uint8_t*, size_t)	24	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:143:10:uint8_t* tflite::SimpleMemoryAllocator::GetHeadBuffer() const	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:145:8:size_t tflite::SimpleMemoryAllocator::GetHeadUsedBytes() const	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:149:8:size_t tflite::SimpleMemoryAllocator::GetTailUsedBytes() const	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:153:8:size_t tflite::SimpleMemoryAllocator::GetAvailableMemory(size_t) const	16	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:159:8:size_t tflite::SimpleMemoryAllocator::GetUsedBytes() const	4	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:163:8:size_t tflite::SimpleMemoryAllocator::GetBufferSize() const	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:167:10:uint8_t* tflite::SimpleMemoryAllocator::head() const	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/simple_memory_allocator.cpp:169:10:uint8_t* tflite::SimpleMemoryAllocator::tail() const	0	static

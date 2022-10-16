@@ -1,0 +1,17 @@
+D:\Masterproef_code\evkmimxrt1064\tensorflow_lite_micro_label_image_dice_classifier\eiq\tensorflow-lite/tensorflow/lite/micro/micro_context.h:122:14:void* tflite::MicroContextAllocatePersistentBuffer(TfLiteContext*, size_t)	0	static
+D:\Masterproef_code\evkmimxrt1064\tensorflow_lite_micro_label_image_dice_classifier\eiq\tensorflow-lite/tensorflow/lite/micro/micro_context.h:126:21:TfLiteStatus tflite::MicroContextRequestScratchBufferInArena(TfLiteContext*, size_t, int*)	0	static
+D:\Masterproef_code\evkmimxrt1064\tensorflow_lite_micro_label_image_dice_classifier\eiq\tensorflow-lite/tensorflow/lite/micro/micro_context.h:131:14:void* tflite::MicroContextGetScratchBuffer(TfLiteContext*, int)	0	static
+D:\Masterproef_code\evkmimxrt1064\tensorflow_lite_micro_label_image_dice_classifier\eiq\tensorflow-lite/tensorflow/lite/micro/micro_context.h:134:22:TfLiteTensor* tflite::MicroContextGetTensor(const TfLiteContext*, int)	0	static
+D:\Masterproef_code\evkmimxrt1064\tensorflow_lite_micro_label_image_dice_classifier\eiq\tensorflow-lite/tensorflow/lite/micro/micro_context.h:138:26:TfLiteEvalTensor* tflite::MicroContextGetEvalTensor(const TfLiteContext*, int)	0	static
+D:\Masterproef_code\evkmimxrt1064\tensorflow_lite_micro_label_image_dice_classifier\eiq\tensorflow-lite/tensorflow/lite/micro/micro_context.h:142:31:TfLiteExternalContext* tflite::MicroContextGetExternalContext(TfLiteContext*, TfLiteExternalContextType)	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_interpreter.cpp:37:1:tflite::MicroInterpreter::MicroInterpreter(const tflite::Model*, const tflite::MicroOpResolver&, uint8_t*, size_t, tflite::ErrorReporter*, tflite::MicroResourceVariables*, tflite::MicroProfiler*)	32	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_interpreter.cpp:59:1:tflite::MicroInterpreter::MicroInterpreter(const tflite::Model*, const tflite::MicroOpResolver&, tflite::MicroAllocator*, tflite::ErrorReporter*, tflite::MicroResourceVariables*, tflite::MicroProfiler*)	40	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_interpreter.cpp:84:6:void tflite::MicroInterpreter::Init(tflite::MicroProfiler*)	8	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_interpreter.cpp:299:15:TfLiteTensor* tflite::MicroInterpreter::input(size_t)	8	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_interpreter.cpp:310:15:TfLiteTensor* tflite::MicroInterpreter::output(size_t)	8	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_interpreter.cpp:325:14:TfLiteStatus tflite::MicroInterpreter::SetMicroExternalContext(void*)	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_interpreter.cpp:78:1:tflite::MicroInterpreter::~MicroInterpreter()	16	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_interpreter.cpp:94:14:TfLiteStatus tflite::MicroInterpreter::PrepareNodeAndRegistrationDataFromFlatbuffer()	88	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_interpreter.cpp:321:14:TfLiteStatus tflite::MicroInterpreter::ResetVariableTensors()	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_interpreter.cpp:188:14:TfLiteStatus tflite::MicroInterpreter::AllocateTensors()	40	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_interpreter.cpp:284:14:TfLiteStatus tflite::MicroInterpreter::Invoke()	8	static

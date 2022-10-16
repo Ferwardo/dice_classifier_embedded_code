@@ -1,0 +1,5 @@
+D:\Masterproef_code\evkmimxrt1064\tensorflow_lite_micro_label_image_dice_classifier\eiq\tensorflow-lite/tensorflow/lite/micro/micro_error_reporter.h:47:3:virtual tflite::MicroErrorReporter::~MicroErrorReporter()	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_error_reporter.cpp:31:6:void {anonymous}::Log(const char*, va_list)	264	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_error_reporter.cpp:63:5:virtual int tflite::MicroErrorReporter::Report(const char*, va_list)	264	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_error_reporter.cpp:47:6:)	16	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_error_reporter.cpp:56:16:tflite::ErrorReporter* tflite::GetMicroErrorReporter()	0	static

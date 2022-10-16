@@ -1,0 +1,14 @@
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:534:7:void* tflite::ops::micro::comparisons::Init(TfLiteContext*, const char*, size_t)	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:539:14:TfLiteStatus tflite::ops::micro::comparisons::Prepare(TfLiteContext*, TfLiteNode*)	56	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:220:14:TfLiteStatus tflite::ops::micro::comparisons::{anonymous}::GreaterEval(TfLiteContext*, TfLiteNode*)	1080	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:298:14:TfLiteStatus tflite::ops::micro::comparisons::{anonymous}::GreaterEqualEval(TfLiteContext*, TfLiteNode*)	1080	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:376:14:TfLiteStatus tflite::ops::micro::comparisons::{anonymous}::LessEval(TfLiteContext*, TfLiteNode*)	1080	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:454:14:TfLiteStatus tflite::ops::micro::comparisons::{anonymous}::LessEqualEval(TfLiteContext*, TfLiteNode*)	1080	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:129:14:TfLiteStatus tflite::ops::micro::comparisons::{anonymous}::NotEqualEval(TfLiteContext*, TfLiteNode*)	1320	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:37:14:TfLiteStatus tflite::ops::micro::comparisons::{anonymous}::EqualEval(TfLiteContext*, TfLiteNode*)	1280	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:585:20:TfLiteRegistration tflite::ops::micro::Register_EQUAL()	8	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:596:20:TfLiteRegistration tflite::ops::micro::Register_NOT_EQUAL()	8	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:607:20:TfLiteRegistration tflite::ops::micro::Register_GREATER()	8	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:618:20:TfLiteRegistration tflite::ops::micro::Register_GREATER_EQUAL()	8	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:629:20:TfLiteRegistration tflite::ops::micro::Register_LESS()	8	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/comparisons.cpp:640:20:TfLiteRegistration tflite::ops::micro::Register_LESS_EQUAL()	8	static

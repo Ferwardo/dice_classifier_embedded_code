@@ -11,7 +11,7 @@
 #define EXAMPLE_NAME       "Label image"
 #define FRAMEWORK_NAME     "TensorFlow Lite Micro"
 #define DETECTION_TRESHOLD 23
-#define NUM_RESULTS        1
+#define NUM_RESULTS        5
 #define DEMO_VERBOSE       false
 #define EOL "\r\n"
 

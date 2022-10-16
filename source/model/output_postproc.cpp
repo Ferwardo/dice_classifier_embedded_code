@@ -37,6 +37,13 @@ status_t MODEL_ProcessOutput(const uint8_t* data, const tensor_dims_t* dims,
         }
     }
 
+    for(int i = 0; i<NUM_RESULTS;i++){
+    	if(topResults[i].index>=0){
+    		PRINTF("%d Label: %s, ", i, labels[topResults[i].index]);
+    		PRINTF("Score: %f"EOL, topResults[i].score*100.0);
+    	}
+    }
+
     int score = (int)(confidence * 100);
     PRINTF("----------------------------------------" EOL);
     PRINTF("     Inference time: %d ms" EOL, inferenceTime / 1000);

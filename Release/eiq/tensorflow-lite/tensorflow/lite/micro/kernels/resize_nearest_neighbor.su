@@ -1,0 +1,3 @@
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp:35:14:TfLiteStatus tflite::ops::micro::resize_nearest_neighbor::Prepare(TfLiteContext*, TfLiteNode*)	56	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp:69:14:TfLiteStatus tflite::ops::micro::resize_nearest_neighbor::Eval(TfLiteContext*, TfLiteNode*)	472	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp:119:20:TfLiteRegistration tflite::ops::micro::Register_RESIZE_NEAREST_NEIGHBOR()	8	static

@@ -1,0 +1,7 @@
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/kernel_util.cpp:40:19:TfLiteEvalTensor* tflite::micro::GetMutableEvalInput(const TfLiteContext*, const TfLiteNode*, int)	4	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/kernel_util.cpp:55:25:const TfLiteEvalTensor* tflite::micro::GetEvalInput(const TfLiteContext*, const TfLiteNode*, int)	4	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/kernel_util.cpp:61:19:TfLiteEvalTensor* tflite::micro::GetEvalOutput(const TfLiteContext*, const TfLiteNode*, int)	4	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/kernel_util.cpp:68:6:bool tflite::micro::HaveSameShapes(const TfLiteEvalTensor*, const TfLiteEvalTensor*)	8	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/kernel_util.cpp:75:20:const tflite::RuntimeShape tflite::micro::GetTensorShape(const TfLiteEvalTensor*)	8	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/kernel_util.cpp:85:13:tflite::PaddingType tflite::micro::RuntimePaddingType(TfLitePadding)	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/kernel_util.cpp:101:14:TfLiteStatus tflite::micro::CreateWritableTensorDimsWithCopy(TfLiteContext*, TfLiteTensor*, TfLiteEvalTensor*)	32	static
