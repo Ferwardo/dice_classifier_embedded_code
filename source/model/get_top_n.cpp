@@ -52,14 +52,23 @@ void MODEL_GetTopN(const uint8_t* tensorData, int tensorSize, tensor_type_t tens
     }
 
     result_t currentResult = {.score = value, .index = i};
+<<<<<<< HEAD
     /*for (int n = 0; n<numResults; n++){
+=======
+    for (int n = 0; n<numResults; n++){
+>>>>>>> ed9d93bb81087236e2661f461d8e6b8f8d59322c
     	if(topResults[n].score<=currentResult.score){
     		result_t tempResult = topResults[n];
     		topResults[n] = currentResult;
     		currentResult = tempResult;
     	}
+<<<<<<< HEAD
     }*/
     result_t pass = {.score = 0.0f, .index = -1};
+=======
+    }
+    /*result_t pass = {.score = 0.0f, .index = -1};
+>>>>>>> ed9d93bb81087236e2661f461d8e6b8f8d59322c
     for (int n = 0; n < numResults; n++) {
       if (pass.index >= 0) {
         result_t swap = topResults[n];
@@ -69,6 +78,6 @@ void MODEL_GetTopN(const uint8_t* tensorData, int tensorSize, tensor_type_t tens
         pass = topResults[n];
         topResults[n] = {.score = value, .index = i};
       }
-    }
+    }*/
   }
 }

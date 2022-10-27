@@ -1,0 +1,4 @@
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/cmsis_nn/svdf.cpp:281:7:void* tflite::{anonymous}::Init(TfLiteContext*, const char*, size_t)	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/cmsis_nn/svdf.cpp:286:14:TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)	96	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/cmsis_nn/svdf.cpp:436:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	312	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/cmsis_nn/svdf.cpp:482:20:TfLiteRegistration tflite::Register_SVDF()	8	static

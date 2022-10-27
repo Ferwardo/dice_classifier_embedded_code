@@ -1,0 +1,6 @@
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/if.cpp:52:7:void* tflite::{anonymous}::Init(TfLiteContext*, const char*, size_t)	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/if.cpp:98:14:TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)	72	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/if.cpp:185:14:TfLiteStatus tflite::{anonymous}::CopyInputBetweenIfAndSubgraph(TfLiteContext*, TfLiteNode*, tflite::MicroGraph&, int, tflite::{anonymous}::CopyInputDirection)	64	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/if.cpp:141:14:TfLiteStatus tflite::{anonymous}::CopyOutputBetweenIfAndSubgraph(TfLiteContext*, TfLiteNode*, tflite::MicroGraph&, int, tflite::{anonymous}::CopyOutputDirection)	64	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/if.cpp:275:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	40	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/if.cpp:324:20:TfLiteRegistration tflite::Register_IF()	8	static

@@ -1,0 +1,4 @@
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/transpose_conv.cpp:141:7:void* tflite::{anonymous}::Init(TfLiteContext*, const char*, size_t)	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/transpose_conv.cpp:146:14:TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)	136	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/transpose_conv.cpp:237:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	376	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/transpose_conv.cpp:337:20:TfLiteRegistration tflite::Register_TRANSPOSE_CONV()	8	static

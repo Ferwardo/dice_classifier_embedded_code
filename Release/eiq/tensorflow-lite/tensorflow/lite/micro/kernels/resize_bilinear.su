@@ -1,0 +1,4 @@
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/resize_bilinear.cpp:32:14:TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)	56	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/resize_bilinear.cpp:113:20:TfLiteRegistration tflite::Register_RESIZE_BILINEAR()	8	static
+D:\Masterproef_code\evkmimxrt1064\tensorflow_lite_micro_label_image_dice_classifier\eiq\tensorflow-lite/tensorflow/lite/kernels/internal/reference/resize_bilinear.h:47:13:void tflite::reference_ops::ResizeBilinear(const tflite::ResizeBilinearParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const int32_t*, const tflite::RuntimeShape&, T*) [with T = float]	176	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/kernels/resize_bilinear.cpp:69:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	368	static

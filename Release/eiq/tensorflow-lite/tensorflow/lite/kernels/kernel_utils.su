@@ -1,0 +1,14 @@
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:109:21:const TfLiteTensor* tflite::GetInput(const TfLiteContext*, const TfLiteNode*, int)	4	static
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:114:14:TfLiteStatus tflite::GetInputSafe(const TfLiteContext*, const TfLiteNode*, int, const TfLiteTensor**)	16	static
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:119:15:TfLiteTensor* tflite::GetVariableInput(TfLiteContext*, const TfLiteNode*, int)	8	static
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:126:15:TfLiteTensor* tflite::GetOutput(TfLiteContext*, const TfLiteNode*, int)	4	static
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:136:14:TfLiteStatus tflite::GetOutputSafe(const TfLiteContext*, const TfLiteNode*, int, TfLiteTensor**)	16	static
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:146:21:const TfLiteTensor* tflite::GetOptionalInputTensor(const TfLiteContext*, const TfLiteNode*, int)	4	static
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:287:14:TfLiteStatus tflite::GetQuantizedConvolutionMultipler(TfLiteContext*, const TfLiteTensor*, const TfLiteTensor*, const TfLiteTensor*, TfLiteTensor*, double*)	24	static
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:324:14:TfLiteStatus tflite::GetQuantizedConvolutionMultipler(TfLiteContext*, const TfLiteTensor*, const TfLiteTensor*, TfLiteTensor*, double*)	16	static
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:384:14:TfLiteStatus tflite::CalculateActivationRangeQuantized(TfLiteContext*, TfLiteFusedActivation, TfLiteTensor*, int32_t*, int32_t*)	24	static
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:211:14:TfLiteStatus tflite::PopulateConvolutionQuantizationParams(TfLiteContext*, const TfLiteTensor*, const TfLiteTensor*, const TfLiteTensor*, TfLiteTensor*, const TfLiteFusedActivation&, int32_t*, int*, int32_t*, int32_t*, int32_t*, int32_t*, int)	120	static
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:196:14:TfLiteStatus tflite::PopulateConvolutionQuantizationParams(TfLiteContext*, const TfLiteTensor*, const TfLiteTensor*, const TfLiteTensor*, TfLiteTensor*, const TfLiteFusedActivation&, int32_t*, int*, int32_t*, int32_t*, int32_t*, int32_t*)	112	static
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:408:6:bool tflite::HaveSameShapes(const TfLiteTensor*, const TfLiteTensor*)	8	static
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:522:5:int tflite::TfLiteTypeGetSize(TfLiteType)	0	static
+../eiq/tensorflow-lite/tensorflow/lite/kernels/kernel_utils.cpp:570:6:bool tflite::IsMobilePlatform()	0	static

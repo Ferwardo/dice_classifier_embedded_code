@@ -1,0 +1,6 @@
+D:\Masterproef_code\evkmimxrt1064\tensorflow_lite_micro_label_image_dice_classifier\eiq\tensorflow-lite/tensorflow/lite/micro/micro_profiler.h:32:11:virtual tflite::MicroProfiler::~MicroProfiler()	0	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_profiler.cpp:25:10:virtual uint32_t tflite::MicroProfiler::BeginEvent(const char*)	16	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_profiler.cpp:36:6:virtual void tflite::MicroProfiler::EndEvent(uint32_t)	16	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_profiler.cpp:41:9:int32_t tflite::MicroProfiler::GetTotalTicks() const	4	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_profiler.cpp:49:6:void tflite::MicroProfiler::Log() const	48	static
+../eiq/tensorflow-lite/tensorflow/lite/micro/micro_profiler.cpp:58:6:void tflite::MicroProfiler::LogCsv() const	32	static
