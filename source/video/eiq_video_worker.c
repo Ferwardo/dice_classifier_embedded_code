@@ -56,7 +56,7 @@ static void start(void)
     {
         PRINTF("Default capture rate width = %d%%,%d%% is used.\r\n",
         EIQ_DEFAULT_CAPTURE_RATE, EIQ_DEFAULT_CAPTURE_RATE);
-        s_worker.setCaptureWindowHeightRate(EIQ_DEFAULT_CAPTURE_RATE);
+        s_worker.setCaptureWindowHeightRate(84);
     }
 
     s_worker.sender->setReadyCallback(s_worker.receiver->base.notify);
@@ -99,7 +99,8 @@ static Dims_t getResolution(void)
 {
     if (s_pExtract == NULL)
     {
-        s_worker.setCaptureWindowHeightRate(EIQ_DEFAULT_CAPTURE_RATE);
+        //s_worker.setCaptureWindowHeightRate(EIQ_DEFAULT_CAPTURE_RATE);
+        s_worker.setCaptureWindowHeightRate(84);
     }
 
     Dims_t dims;
@@ -120,7 +121,7 @@ static uint8_t* getData(void)
     if (s_pExtract == NULL)
     {
         /* Allocate capture windows for default size. */
-        s_worker.setCaptureWindowHeightRate(EIQ_DEFAULT_CAPTURE_RATE);
+        s_worker.setCaptureWindowHeightRate(84);
     }
 
     return (uint8_t*) s_pExtract;
