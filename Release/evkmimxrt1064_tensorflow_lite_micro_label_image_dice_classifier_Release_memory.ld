@@ -6,7 +6,7 @@
  * Generated linker script file for MIMXRT1064xxxxA
  * Created from memory.ldt by FMCreateLinkMemory
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v11.6.0 [Build 8187] [2022-07-13] on 26 okt. 2022 09:59:22
+ * MCUXpresso IDE v11.6.0 [Build 8187] [2022-07-13] on 29 okt. 2022 16:23:14
  */
 
 MEMORY

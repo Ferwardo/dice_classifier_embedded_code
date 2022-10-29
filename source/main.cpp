@@ -5,6 +5,18 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
+#include <stdio.h>
+#include <string.h>
+#include "fsl_sd.h"
+#include "fsl_debug_console.h"
+#include "ff.h"
+#include "diskio.h"
+#include "fsl_sd_disk.h"
+#include "pin_mux.h"
+#include "clock_config.h"
+#include "board.h"
+#include "sdmmc_config.h"
+#include "fsl_common.h"
 #include "board_init.h"
 #include "demo_config.h"
 #include "demo_info.h"
@@ -14,11 +26,19 @@
 #include "model.h"
 #include "output_postproc.h"
 #include "timer.h"
+#define BUFFER_SIZE (513U)
+
+
+static status_t sdcardWaitCardInsert(void);
 
 int main(void)
 {
     BOARD_Init();
     TIMER_Init();
+    BOARD_ConfigMPU();
+	BOARD_InitPins();
+	BOARD_BootClockRUN();
+	BOARD_InitDebugConsole();
 
     DEMO_PrintInfo();
 
@@ -36,16 +56,42 @@ int main(void)
     tensor_type_t outputType;
     uint8_t* outputData = MODEL_GetOutputTensorData(&outputDims, &outputType);
 
+    FATFS g_fileSystem;
+    FIL g_fileObject;
+    SDK_ALIGN(uint8_t g_bufferRead[BUFFER_SIZE], BOARD_SDMMC_DATA_BUFFER_ALIGN_SIZE);
+    const TCHAR driverNumberBuffer[3U] = {SDDISK + '0', ':', '/'};
+
+    if (sdcardWaitCardInsert() != kStatus_Success)
+	{
+		return -1;
+	}
+
+	if (f_mount(&g_fileSystem, driverNumberBuffer, 0U))
+	{
+		PRINTF("Mount volume failed.\r\n");
+		return -1;
+	}
+
     while (1)
     {
         /* Expected tensor dimensions: [batches, height, width, channels] */
-        if (IMAGE_GetImage(inputData, inputDims.data[2], inputDims.data[1], inputDims.data[3]) != kStatus_Success)
+    	PRINTF("Read from above created file.\r\n");
+		memset(g_bufferRead, 0U, sizeof(g_bufferRead));
+		error = f_read(&g_fileObject, g_bufferRead, sizeof(g_bufferRead), &bytesRead);
+		if ((error) || (bytesRead != sizeof(g_bufferRead)))
+		{
+			PRINTF("Read file failed. \r\n");
+			failedFlag = true;
+			continue;
+		}
+    	//this code is not necessary when reading the file from the sd card
+    	/*if (IMAGE_GetImage(inputData, inputDims.data[2], inputDims.data[1], inputDims.data[3]) != kStatus_Success)
         {
             PRINTF("Failed retrieving input image" EOL);
             for (;;) {}
         }
 
-        MODEL_ConvertInput(inputData, &inputDims, inputType);
+        MODEL_ConvertInput(inputData, &inputDims, inputType);*/
 
         auto startTime = TIMER_GetTimeInUS();
         MODEL_RunInference();
@@ -53,4 +99,33 @@ int main(void)
 
         MODEL_ProcessOutput(outputData, &outputDims, outputType, endTime - startTime);
     }
+}
+
+static status_t sdcardWaitCardInsert(void)
+{
+    BOARD_SD_Config(&g_sd, NULL, BOARD_SDMMC_SD_HOST_IRQ_PRIORITY, NULL);
+
+    /* SD host init function */
+    if (SD_HostInit(&g_sd) != kStatus_Success)
+    {
+        PRINTF("\r\nSD host init fail\r\n");
+        return kStatus_Fail;
+    }
+
+    /* wait card insert */
+    if (SD_PollingCardInsert(&g_sd, kSD_Inserted) == kStatus_Success)
+    {
+        PRINTF("\r\nCard inserted.\r\n");
+        /* power off card */
+        SD_SetCardPower(&g_sd, false);
+        /* power on the card */
+        SD_SetCardPower(&g_sd, true);
+    }
+    else
+    {
+        PRINTF("\r\nCard detect fail.\r\n");
+        return kStatus_Fail;
+    }
+
+    return kStatus_Success;
 }
