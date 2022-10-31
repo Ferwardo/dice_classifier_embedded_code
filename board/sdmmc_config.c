@@ -26,13 +26,13 @@ AT_NONCACHEABLE_SECTION_ALIGN(uint32_t s_sdmmcHostDmaBuffer[BOARD_SDMMC_HOST_DMA
 SDK_ALIGN(static uint8_t s_sdmmcCacheLineAlignBuffer[BOARD_SDMMC_DATA_BUFFER_ALIGN_SIZE * 2U],
           BOARD_SDMMC_DATA_BUFFER_ALIGN_SIZE);
 #endif
-#if defined(SDIO_ENABLED) || defined(SD_ENABLED)
+//#if defined(SDIO_ENABLED) || defined(SD_ENABLED)
 static sd_detect_card_t s_cd;
 static sd_io_voltage_t s_ioVoltage = {
     .type = BOARD_SDMMC_SD_IO_VOLTAGE_CONTROL_TYPE,
     .func = NULL,
 };
-#endif
+//#endif
 sdmmchost_t s_host;
 #ifdef SDIO_ENABLED
 static sdio_card_int_t s_sdioInt;
@@ -46,7 +46,7 @@ uint32_t BOARD_USDHC1ClockConfiguration(void)
     return 0;
 }
 
-#if defined(SDIO_ENABLED) || defined(SD_ENABLED)
+//#if defined(SDIO_ENABLED) || defined(SD_ENABLED)
 void BOARD_SDCardPowerControl(bool enable)
 {
 }
@@ -54,9 +54,9 @@ void BOARD_SDCardPowerControl(bool enable)
 void BOARD_SD_Pin_Config(uint32_t freq)
 {
 }
-#endif
+//#endif
 
-#ifdef SD_ENABLED
+//#ifdef SD_ENABLED
 void BOARD_SD_Config(void *card, sd_cd_t cd, uint32_t hostIRQPriority, void *userData)
 {
     assert(card);
@@ -81,7 +81,7 @@ void BOARD_SD_Config(void *card, sd_cd_t cd, uint32_t hostIRQPriority, void *use
 
     NVIC_SetPriority(BOARD_SDMMC_SD_HOST_IRQ, hostIRQPriority);
 }
-#endif
+//#endif
 
 #ifdef SDIO_ENABLED
 void BOARD_SDIO_Config(void *card, sd_cd_t cd, uint32_t hostIRQPriority, sdio_int_t cardInt)

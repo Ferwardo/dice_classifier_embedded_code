@@ -6,7 +6,7 @@
  * Generated linker script file for MIMXRT1064xxxxA
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v11.6.0 [Build 8187] [2022-07-13] on 29 okt. 2022 16:23:14
+ * MCUXpresso IDE v11.6.0 [Build 8187] [2022-07-13] on 26 okt. 2022 09:59:22
  */
 
 INCLUDE "evkmimxrt1064_tensorflow_lite_micro_label_image_dice_classifier_Release_library.ld"
@@ -76,7 +76,6 @@ SECTIONS
         *(.after_vectors*)
 
        *(.text*)
-       KEEP(*freertos*/tasks.o(.rodata*)) /* FreeRTOS Debug Config */
        *(.rodata .rodata.* .constdata .constdata.*)
        . = ALIGN(4);
             /* C++ constructors etc */

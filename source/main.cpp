@@ -48,6 +48,7 @@ int main(void)
         for (;;) {}
     }
 
+    //ML model input and output setting variables
     tensor_dims_t inputDims;
     tensor_type_t inputType;
     uint8_t* inputData = MODEL_GetInputTensorData(&inputDims, &inputType);
@@ -56,10 +57,14 @@ int main(void)
     tensor_type_t outputType;
     uint8_t* outputData = MODEL_GetOutputTensorData(&outputDims, &outputType);
 
+    //variables for the filesystem and file read
     FATFS g_fileSystem;
     FIL g_fileObject;
     SDK_ALIGN(uint8_t g_bufferRead[BUFFER_SIZE], BOARD_SDMMC_DATA_BUFFER_ALIGN_SIZE);
     const TCHAR driverNumberBuffer[3U] = {SDDISK + '0', ':', '/'};
+    FRESULT error;
+    volatile bool failedFlag = false;
+    UINT bytesRead;
 
     if (sdcardWaitCardInsert() != kStatus_Success)
 	{
@@ -74,8 +79,23 @@ int main(void)
 
     while (1)
     {
-        /* Expected tensor dimensions: [batches, height, width, channels] */
-    	PRINTF("Read from above created file.\r\n");
+        //open the file
+		error = f_open(&g_fileObject, _T("preprocessed_d6_predict.jpg.bin"), (FA_WRITE | FA_READ | FA_CREATE_ALWAYS));
+		if (error)
+		{
+			if (error == FR_EXIST)
+			{
+				PRINTF("File exists.\r\n");
+			}
+			else
+			{
+				PRINTF("Open file failed.\r\n");
+				return -1;
+			}
+		}
+
+		//read the file
+		PRINTF("Read from file.\r\n");
 		memset(g_bufferRead, 0U, sizeof(g_bufferRead));
 		error = f_read(&g_fileObject, g_bufferRead, sizeof(g_bufferRead), &bytesRead);
 		if ((error) || (bytesRead != sizeof(g_bufferRead)))
@@ -84,7 +104,9 @@ int main(void)
 			failedFlag = true;
 			continue;
 		}
+
     	//this code is not necessary when reading the file from the sd card
+		/* Expected tensor dimensions: [batches, height, width, channels] */
     	/*if (IMAGE_GetImage(inputData, inputDims.data[2], inputDims.data[1], inputDims.data[3]) != kStatus_Success)
         {
             PRINTF("Failed retrieving input image" EOL);

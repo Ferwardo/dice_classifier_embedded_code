@@ -8,9 +8,9 @@
 #ifndef _SDMMC_CONFIG_H_
 #define _SDMMC_CONFIG_H_
 
-#ifdef SD_ENABLED
+//#ifdef SD_ENABLED
 #include "fsl_sd.h"
-#endif
+//#endif
 #ifdef MMC_ENABLED
 #include "fsl_mmc.h"
 #endif
@@ -83,9 +83,9 @@ extern "C" {
  * @param cd card detect callback
  * @param userData user data for callback
  */
-#ifdef SD_ENABLED
+//#ifdef SD_ENABLED
 void BOARD_SD_Config(void *card, sd_cd_t cd, uint32_t hostIRQPriority, void *userData);
-#endif
+//#endif
 
 /*!
  * @brief BOARD SDIO configurations.

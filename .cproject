@@ -49,7 +49,6 @@
 									<listOptionValue builtIn="false" value="XIP_BOOT_HEADER_ENABLE=1"/>
 									<listOptionValue builtIn="false" value="SDK_OS_BAREMETAL"/>
 									<listOptionValue builtIn="false" value="SERIAL_PORT_TYPE_UART=1"/>
-									<listOptionValue builtIn="false" value="SDK_OS_FREE_RTOS"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.undef.1667612456" name="Undefined symbols (-U)" superClass="gnu.cpp.compiler.option.preprocessor.undef" useByScannerDiscovery="false"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.901321213" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
@@ -73,22 +72,14 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/eiq/tensorflow-lite/third_party/cmsis/CMSIS/Core/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/eiq/tensorflow-lite/third_party/cmsis/CMSIS/DSP/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/serial_manager}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos/freertos_kernel/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos/freertos_kernel/portable/GCC/ARM_CM4F}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source/fsl_sd_disk}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/host}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/osa}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/host}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/phy}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/host/class}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/nand_flash}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/osa}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/template/usdhc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/generated}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source/fsl_sd_disk}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/template/usdhc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/model}&quot;"/>
 								</option>
@@ -201,22 +192,14 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/eiq/tensorflow-lite/third_party/cmsis/CMSIS/Core/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/eiq/tensorflow-lite/third_party/cmsis/CMSIS/DSP/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/serial_manager}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos/freertos_kernel/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos/freertos_kernel/portable/GCC/ARM_CM4F}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source/fsl_sd_disk}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/host}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/osa}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/host}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/phy}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/host/class}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/nand_flash}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/osa}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/template/usdhc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/generated}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source/fsl_sd_disk}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/template/usdhc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/model}&quot;"/>
 								</option>
@@ -299,22 +282,14 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/eiq/tensorflow-lite/third_party/cmsis/CMSIS/Core/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/eiq/tensorflow-lite/third_party/cmsis/CMSIS/DSP/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/serial_manager}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos/freertos_kernel/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos/freertos_kernel/portable/GCC/ARM_CM4F}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source/fsl_sd_disk}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/host}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/osa}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/host}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/phy}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/host/class}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/nand_flash}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/osa}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/template/usdhc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/generated}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source/fsl_sd_disk}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/template/usdhc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/model}&quot;"/>
 								</option>
@@ -463,12 +438,9 @@
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="device"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="xip"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="board"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="nand_flash"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="usb"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="fatfs"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="sdmmc"/>
 						<entry excluding="tensorflow-lite/tensorflow/lite/micro/kernels/add.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/conv.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/depthwise_conv.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/fully_connected.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/mul.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/pooling.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/softmax.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/svdf.cpp" flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="eiq"/>
-						<entry excluding="freertos_kernel/portable/MemMang/heap_1.c|freertos_kernel/portable/MemMang/heap_2.c|freertos_kernel/portable/MemMang/heap_3.c|freertos_kernel/portable/MemMang/heap_5.c" flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="freertos"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -520,7 +492,6 @@
 									<listOptionValue builtIn="false" value="XIP_BOOT_HEADER_ENABLE=1"/>
 									<listOptionValue builtIn="false" value="SDK_OS_BAREMETAL"/>
 									<listOptionValue builtIn="false" value="SERIAL_PORT_TYPE_UART=1"/>
-									<listOptionValue builtIn="false" value="SDK_OS_FREE_RTOS"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.undef.811916664" name="Undefined symbols (-U)" superClass="gnu.cpp.compiler.option.preprocessor.undef" useByScannerDiscovery="false"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.370481947" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
@@ -544,22 +515,14 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/eiq/tensorflow-lite/third_party/cmsis/CMSIS/Core/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/eiq/tensorflow-lite/third_party/cmsis/CMSIS/DSP/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/serial_manager}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos/freertos_kernel/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos/freertos_kernel/portable/GCC/ARM_CM4F}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source/fsl_sd_disk}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/host}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/osa}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/host}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/phy}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/host/class}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/nand_flash}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/osa}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/template/usdhc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/generated}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source/fsl_sd_disk}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/template/usdhc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/model}&quot;"/>
 								</option>
@@ -673,22 +636,14 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/eiq/tensorflow-lite/third_party/cmsis/CMSIS/Core/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/eiq/tensorflow-lite/third_party/cmsis/CMSIS/DSP/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/serial_manager}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos/freertos_kernel/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos/freertos_kernel/portable/GCC/ARM_CM4F}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source/fsl_sd_disk}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/host}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/osa}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/host}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/phy}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/host/class}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/nand_flash}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/osa}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/template/usdhc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/generated}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source/fsl_sd_disk}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/template/usdhc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/model}&quot;"/>
 								</option>
@@ -770,22 +725,14 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/eiq/tensorflow-lite/third_party/cmsis/CMSIS/Core/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/eiq/tensorflow-lite/third_party/cmsis/CMSIS/DSP/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/serial_manager}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos/freertos_kernel/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos/freertos_kernel/portable/GCC/ARM_CM4F}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source/fsl_sd_disk}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/host}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/osa}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/host}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/phy}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb/host/class}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/nand_flash}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/osa}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/template/usdhc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/generated}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/fatfs/source/fsl_sd_disk}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/sdmmc/template/usdhc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source/model}&quot;"/>
 								</option>
@@ -932,12 +879,9 @@
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="device"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="xip"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="board"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="nand_flash"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="usb"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="fatfs"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="sdmmc"/>
 						<entry excluding="tensorflow-lite/tensorflow/lite/micro/kernels/add.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/conv.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/depthwise_conv.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/fully_connected.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/mul.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/pooling.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/softmax.cpp|tensorflow-lite/tensorflow/lite/micro/kernels/svdf.cpp" flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="eiq"/>
-						<entry excluding="freertos_kernel/portable/MemMang/heap_1.c|freertos_kernel/portable/MemMang/heap_2.c|freertos_kernel/portable/MemMang/heap_3.c|freertos_kernel/portable/MemMang/heap_5.c" flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="freertos"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -973,7 +917,7 @@
 		<sdkName>SDK_2.x_EVK-MIMXRT1064</sdkName>
 		<sdkExample>evkmimxrt1064_tensorflow_lite_micro_label_image</sdkExample>
 		<sdkVersion>2.12.1</sdkVersion>
-		<sdkComponents>driver.camera-device-common.MIMXRT1064;driver.camera-receiver-common.MIMXRT1064;driver.camera-device-sccb.MIMXRT1064;driver.camera-device-ov7725.MIMXRT1064;driver.camera-device-mt9m114.MIMXRT1064;driver.camera-common.MIMXRT1064;driver.camera-receiver-csi.MIMXRT1064;platform.drivers.csi.MIMXRT1064;driver.video-common.MIMXRT1064;driver.video-i2c.MIMXRT1064;platform.drivers.elcdif.MIMXRT1064;platform.drivers.pxp.MIMXRT1064;driver.dc-fb-common.MIMXRT1064;driver.dc-fb-elcdif.MIMXRT1064;platform.drivers.igpio.MIMXRT1064;utility.debug_console_lite.MIMXRT1064;platform.utilities.assert_lite.MIMXRT1064;middleware.eiq.worker.video.MIMXRT1064;middleware.eiq.gui.printf.MIMXRT1064;middleware.eiq.tensorflow_lite_micro.MIMXRT1064;component.lists.MIMXRT1064;component.lpuart_adapter.MIMXRT1064;platform.drivers.common.MIMXRT1064;platform.drivers.lpuart.MIMXRT1064;device.MIMXRT1064_CMSIS.MIMXRT1064;device.MIMXRT1064_startup.MIMXRT1064;platform.drivers.clock.MIMXRT1064;platform.drivers.iomuxc.MIMXRT1064;platform.drivers.lpi2c.MIMXRT1064;platform.drivers.xip_device.MIMXRT1064;platform.drivers.xip_board.evkmimxrt1064.MIMXRT1064;middleware.eiq.tensorflow_lite_micro.cmsis_nn.MIMXRT1064;CMSIS_Include_core_cm.MIMXRT1064;middleware.eiq.worker.MIMXRT1064;middleware.eiq.tensorflow_lite_micro.third_party.flatbuffers.MIMXRT1064;middleware.eiq.tensorflow_lite_micro.third_party.gemmlowp.MIMXRT1064;middleware.eiq.tensorflow_lite_micro.third_party.ruy.MIMXRT1064;platform.utilities.misc_utilities.MIMXRT1064;device.MIMXRT1064_system.MIMXRT1064;middleware.eiq.tensorflow_lite_micro.third_party.cmsis_nn.MIMXRT1064;evkmimxrt1064_tensorflow_lite_micro_label_image;platform.drivers.usdhc.MIMXRT1064;project_template.evkmimxrt1064.MIMXRT1064;platform.drivers.nic301.MIMXRT1064;platform.utilities.assert.MIMXRT1064;component.serial_manager_uart.MIMXRT1064;utility.debug_console.MIMXRT1064;component.serial_manager.MIMXRT1064;middleware.freertos-kernel.MIMXRT1064;platform.drivers.cache_armv7_m7.MIMXRT1064;platform.drivers.semc.MIMXRT1064;middleware.sdmmc.common.MIMXRT1064;middleware.sdmmc.host.usdhc.MIMXRT1064;middleware.sdmmc.host.usdhc.azurertos.MIMXRT1064;middleware.sdmmc.host.usdhc.freertos.MIMXRT1064;middleware.sdmmc.host.usdhc.interrupt.MIMXRT1064;middleware.sdmmc.host.usdhc.polling.MIMXRT1064;middleware.sdmmc.mmc.MIMXRT1064;middleware.sdmmc.osa.azurertos.MIMXRT1064;middleware.sdmmc.osa.bm.MIMXRT1064;middleware.sdmmc.osa.freertos.MIMXRT1064;middleware.sdmmc.sd.MIMXRT1064;middleware.sdmmc.sdio.MIMXRT1064;middleware.usb.host.common_header.MIMXRT1064;middleware.usb.common_header.MIMXRT1064;middleware.usb.host_controller_ehci.MIMXRT1064;middleware.usb.phy.MIMXRT1064;middleware.usb.host.stack.MIMXRT1064;middleware.usb.host_msd.MIMXRT1064;middleware.fatfs.MIMXRT1064;driver.nand_flash-common.MIMXRT1064;driver.nand_flash-controller-semc.MIMXRT1064;component.osa_bm.MIMXRT1064;component.osa_thread.MIMXRT1064;component.osa_free_rtos.MIMXRT1064;component.osa.MIMXRT1064;middleware.freertos-kernel.template.MIMXRT1064;middleware.sdmmc.usdhc.template.MIMXRT1064;middleware.fatfs.template_nand.MIMXRT1064;middleware.fatfs.template_sd.MIMXRT1064;middleware.fatfs.template_mmc.MIMXRT1064;middleware.fatfs.template_ram.MIMXRT1064;middleware.usb.host.ehci_config_header.MIMXRT1064;middleware.fatfs.template_usb.MIMXRT1064;middleware.freertos-kernel.extension.MIMXRT1064;middleware.fatfs.sd.MIMXRT1064;</sdkComponents>
+		<sdkComponents>driver.camera-device-common.MIMXRT1064;driver.camera-receiver-common.MIMXRT1064;driver.camera-device-sccb.MIMXRT1064;driver.camera-device-ov7725.MIMXRT1064;driver.camera-device-mt9m114.MIMXRT1064;driver.camera-common.MIMXRT1064;driver.camera-receiver-csi.MIMXRT1064;platform.drivers.csi.MIMXRT1064;driver.video-common.MIMXRT1064;driver.video-i2c.MIMXRT1064;platform.drivers.elcdif.MIMXRT1064;platform.drivers.pxp.MIMXRT1064;driver.dc-fb-common.MIMXRT1064;driver.dc-fb-elcdif.MIMXRT1064;platform.drivers.igpio.MIMXRT1064;utility.debug_console_lite.MIMXRT1064;platform.utilities.assert_lite.MIMXRT1064;middleware.eiq.worker.video.MIMXRT1064;middleware.eiq.gui.printf.MIMXRT1064;middleware.eiq.tensorflow_lite_micro.MIMXRT1064;component.lists.MIMXRT1064;component.lpuart_adapter.MIMXRT1064;platform.drivers.common.MIMXRT1064;platform.drivers.lpuart.MIMXRT1064;device.MIMXRT1064_CMSIS.MIMXRT1064;device.MIMXRT1064_startup.MIMXRT1064;platform.drivers.clock.MIMXRT1064;platform.drivers.iomuxc.MIMXRT1064;platform.drivers.lpi2c.MIMXRT1064;platform.drivers.xip_device.MIMXRT1064;platform.drivers.xip_board.evkmimxrt1064.MIMXRT1064;middleware.eiq.tensorflow_lite_micro.cmsis_nn.MIMXRT1064;CMSIS_Include_core_cm.MIMXRT1064;middleware.eiq.worker.MIMXRT1064;middleware.eiq.tensorflow_lite_micro.third_party.flatbuffers.MIMXRT1064;middleware.eiq.tensorflow_lite_micro.third_party.gemmlowp.MIMXRT1064;middleware.eiq.tensorflow_lite_micro.third_party.ruy.MIMXRT1064;platform.utilities.misc_utilities.MIMXRT1064;device.MIMXRT1064_system.MIMXRT1064;middleware.eiq.tensorflow_lite_micro.third_party.cmsis_nn.MIMXRT1064;evkmimxrt1064_tensorflow_lite_micro_label_image;middleware.baremetal.MIMXRT1064;platform.drivers.cache_armv7_m7.MIMXRT1064;platform.drivers.usdhc.MIMXRT1064;project_template.evkmimxrt1064.MIMXRT1064;middleware.fatfs.template_sd.MIMXRT1064;middleware.fatfs.template_ram.MIMXRT1064;platform.drivers.nic301.MIMXRT1064;platform.utilities.assert.MIMXRT1064;utility.debug_console.MIMXRT1064;middleware.fatfs.MIMXRT1064;middleware.fatfs.sd.MIMXRT1064;middleware.sdmmc.common.MIMXRT1064;middleware.sdmmc.host.usdhc.MIMXRT1064;middleware.sdmmc.osa.bm.MIMXRT1064;middleware.sdmmc.sd.MIMXRT1064;middleware.sdmmc.host.usdhc.interrupt.MIMXRT1064;component.osa.MIMXRT1064;component.osa_bm.MIMXRT1064;middleware.usb.host.ehci_config_header.MIMXRT1064;middleware.fatfs.template_usb.MIMXRT1064;middleware.sdmmc.usdhc.template.MIMXRT1064;</sdkComponents>
 		<boardId>evkmimxrt1064</boardId>
 		<package>MIMXRT1064DVL6A</package>
 		<core>cm7</core>

@@ -26,8 +26,6 @@ OBJS :=
 SUBDIRS := \
 board \
 component/lists \
-component/osa \
-component/serial_manager \
 component/uart \
 device \
 drivers \
@@ -51,25 +49,12 @@ eiq/tensorflow-lite/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions \
 eiq/tensorflow-lite/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions \
 eiq/tensorflow-lite/third_party/cmsis/CMSIS/NN/Source/SVDFunctions \
 eiq/tensorflow-lite/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions \
-fatfs/source \
-fatfs/source/fsl_sd_disk \
-freertos/freertos_kernel \
-freertos/freertos_kernel/portable/GCC/ARM_CM4F \
-freertos/freertos_kernel/portable/MemMang \
-nand_flash \
-sdmmc/host \
-sdmmc/osa \
-sdmmc/src \
-sdmmc/template/usdhc \
 source \
 source/gprintf \
 source/image \
 source/model \
 source/video \
 startup \
-usb/host/class \
-usb/host \
-usb/phy \
 utilities \
 video \
 xip \
