@@ -39,7 +39,7 @@ extern tflite::MicroOpResolver &MODEL_GetOpsResolver(tflite::ErrorReporter* erro
 // An area of memory to use for input, output, and intermediate arrays.
 // (Can be adjusted based on the model needs.)
 //constexpr int kTensorArenaSize = (256 + 128) * 1024;
-constexpr int kTensorArenaSize = 1800000;
+constexpr int kTensorArenaSize = 1820000;
 static uint8_t s_tensorArena[kTensorArenaSize] __ALIGNED(16);
 
 status_t MODEL_Init(void)
@@ -160,9 +160,8 @@ void MODEL_ConvertInput(uint8_t* data, tensor_dims_t* dims, tensor_type_t type)
         case kTensorType_FLOAT32:
             for (int i = size - 1; i >= 0; i--)
             {
-                reinterpret_cast<float*>(data)[i] =
-                    //(static_cast<int>(data[i]) - MODEL_INPUT_MEAN) / MODEL_INPUT_STD;
-                	  (static_cast<int>(data[i])) / 255;
+                reinterpret_cast<float*>(data)[i] = (static_cast<int>(data[i]) - MODEL_INPUT_MEAN) / MODEL_INPUT_STD;
+                	//(static_cast<int>(data[i])) / 255;
             }
             break;
         default:
