@@ -26,12 +26,13 @@
 #include "model.h"
 #include "output_postproc.h"
 #include "timer.h"
-#define BUFFER_SIZE (513U)
+
+/*#define BUFFER_SIZE (513U)
 
 
 static status_t sdcardWaitCardInsert(void);
 static FATFS g_fileSystem;
-static FIL g_fileObject;
+static FIL g_fileObject;*/
 
 int main(void)
 {
