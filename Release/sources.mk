@@ -25,7 +25,9 @@ OBJS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 board \
+component/gpio \
 component/lists \
+component/osa \
 component/uart \
 device \
 drivers \
@@ -49,6 +51,12 @@ eiq/tensorflow-lite/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions \
 eiq/tensorflow-lite/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions \
 eiq/tensorflow-lite/third_party/cmsis/CMSIS/NN/Source/SVDFunctions \
 eiq/tensorflow-lite/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions \
+fatfs/source \
+fatfs/source/fsl_ram_disk \
+fatfs/source/fsl_sd_disk \
+sdmmc/host \
+sdmmc/osa \
+sdmmc/src \
 source \
 source/gprintf \
 source/image \

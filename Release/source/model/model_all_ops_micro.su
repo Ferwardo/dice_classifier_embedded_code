@@ -1,2 +1,2 @@
-D:\Masterproef_code\evkmimxrt1064\tensorflow_lite_micro_label_image_dice_classifier\eiq\tensorflow-lite/tensorflow/lite/micro/all_ops_resolver.h:28:7:virtual tflite::AllOpsResolver::~AllOpsResolver()	0	static
+D:\Masterproef_code\dice_classifier_embedded_code\eiq\tensorflow-lite/tensorflow/lite/micro/all_ops_resolver.h:28:7:virtual tflite::AllOpsResolver::~AllOpsResolver()	0	static
 ../source/model/model_all_ops_micro.cpp:10:26:tflite::MicroOpResolver& MODEL_GetOpsResolver(tflite::ErrorReporter*)	8	static

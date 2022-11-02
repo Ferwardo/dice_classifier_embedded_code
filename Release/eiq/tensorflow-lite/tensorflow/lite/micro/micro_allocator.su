@@ -1,5 +1,5 @@
-D:\Masterproef_code\evkmimxrt1064\tensorflow_lite_micro_label_image_dice_classifier\eiq\tensorflow-lite/tensorflow/lite/micro/memory_planner/micro_memory_planner.h:64:24:virtual TfLiteStatus tflite::MicroMemoryPlanner::AddBuffer(tflite::ErrorReporter*, int, int, int, int)	0	static
-D:\Masterproef_code\evkmimxrt1064\tensorflow_lite_micro_label_image_dice_classifier\eiq\tensorflow-lite/tensorflow/lite/micro/memory_planner/micro_memory_planner.h:83:24:virtual TfLiteStatus tflite::MicroMemoryPlanner::Init(unsigned char*, int)	0	static
+D:\Masterproef_code\dice_classifier_embedded_code\eiq\tensorflow-lite/tensorflow/lite/micro/memory_planner/micro_memory_planner.h:64:24:virtual TfLiteStatus tflite::MicroMemoryPlanner::AddBuffer(tflite::ErrorReporter*, int, int, int, int)	0	static
+D:\Masterproef_code\dice_classifier_embedded_code\eiq\tensorflow-lite/tensorflow/lite/micro/memory_planner/micro_memory_planner.h:83:24:virtual TfLiteStatus tflite::MicroMemoryPlanner::Init(unsigned char*, int)	0	static
 ../eiq/tensorflow-lite/tensorflow/lite/micro/micro_allocator.cpp:69:9:virtual void* tflite::{anonymous}::MicroBuiltinDataAllocator::Allocate(size_t, size_t)	0	static
 ../eiq/tensorflow-lite/tensorflow/lite/micro/micro_allocator.cpp:72:8:virtual void tflite::{anonymous}::MicroBuiltinDataAllocator::Deallocate(void*)	0	static
 ../eiq/tensorflow-lite/tensorflow/lite/micro/micro_allocator.cpp:488:1:virtual tflite::MicroAllocator::~MicroAllocator()	0	static

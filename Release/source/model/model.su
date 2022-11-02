@@ -1,4 +1,4 @@
-D:\Masterproef_code\evkmimxrt1064\tensorflow_lite_micro_label_image_dice_classifier\eiq\tensorflow-lite/tensorflow/lite/micro/micro_error_reporter.h:47:3:virtual tflite::MicroErrorReporter::~MicroErrorReporter()	0	static
+D:\Masterproef_code\dice_classifier_embedded_code\eiq\tensorflow-lite/tensorflow/lite/micro/micro_error_reporter.h:47:3:virtual tflite::MicroErrorReporter::~MicroErrorReporter()	0	static
 ../source/model/model.cpp:45:10:status_t MODEL_Init()	4792	static
 ../source/model/model.cpp:95:10:status_t MODEL_RunInference()	8	static
 ../source/model/model.cpp:106:10:uint8_t* GetTensorData(TfLiteTensor*, tensor_dims_t*, tensor_type_t*)	8	static

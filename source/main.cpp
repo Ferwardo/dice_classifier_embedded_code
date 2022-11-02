@@ -30,6 +30,8 @@
 
 
 static status_t sdcardWaitCardInsert(void);
+static FATFS g_fileSystem;
+static FIL g_fileObject;
 
 int main(void)
 {
@@ -57,9 +59,7 @@ int main(void)
     tensor_type_t outputType;
     uint8_t* outputData = MODEL_GetOutputTensorData(&outputDims, &outputType);
 
-    //variables for the filesystem and file read
-    FATFS g_fileSystem;
-    FIL g_fileObject;
+    /*//variables for the filesystem and file read
     SDK_ALIGN(uint8_t g_bufferRead[BUFFER_SIZE], BOARD_SDMMC_DATA_BUFFER_ALIGN_SIZE);
     const TCHAR driverNumberBuffer[3U] = {SDDISK + '0', ':', '/'};
     FRESULT error;
@@ -77,10 +77,19 @@ int main(void)
 		return -1;
 	}
 
+#if (FF_FS_RPATH >= 2U)
+    error = f_chdrive((char const *)&driverNumberBuffer[0U]);
+    if (error)
+    {
+        PRINTF("Change drive failed.\r\n");
+        return -1;
+    }
+#endif*/
+
     while (1)
     {
-        //open the file
-		error = f_open(&g_fileObject, _T("preprocessed_d6_predict.jpg.bin"), (FA_WRITE | FA_READ | FA_CREATE_ALWAYS));
+       /*//open the file
+		error = f_open(&g_fileObject, _T("/DIR_1/preprocessed_d6_predict.bin"), (FA_WRITE | FA_READ));
 		if (error)
 		{
 			if (error == FR_EXIST)
@@ -103,17 +112,18 @@ int main(void)
 			PRINTF("Read file failed. \r\n");
 			failedFlag = true;
 			continue;
-		}
+		}*/
+
 
     	//this code is not necessary when reading the file from the sd card
-		/* Expected tensor dimensions: [batches, height, width, channels] */
-    	/*if (IMAGE_GetImage(inputData, inputDims.data[2], inputDims.data[1], inputDims.data[3]) != kStatus_Success)
+		/*Expected tensor dimensions: [batches, height, width, channels] */
+    	if (IMAGE_GetImage(inputData, inputDims.data[2], inputDims.data[1], inputDims.data[3]) != kStatus_Success)
         {
             PRINTF("Failed retrieving input image" EOL);
             for (;;) {}
         }
 
-        MODEL_ConvertInput(inputData, &inputDims, inputType);*/
+        MODEL_ConvertInput(inputData, &inputDims, inputType);
 
         auto startTime = TIMER_GetTimeInUS();
         MODEL_RunInference();
@@ -123,25 +133,25 @@ int main(void)
     }
 }
 
-static status_t sdcardWaitCardInsert(void)
+/*static status_t sdcardWaitCardInsert(void)
 {
     BOARD_SD_Config(&g_sd, NULL, BOARD_SDMMC_SD_HOST_IRQ_PRIORITY, NULL);
 
     /* SD host init function */
-    if (SD_HostInit(&g_sd) != kStatus_Success)
+    /*if (SD_HostInit(&g_sd) != kStatus_Success)
     {
         PRINTF("\r\nSD host init fail\r\n");
         return kStatus_Fail;
     }
 
     /* wait card insert */
-    if (SD_PollingCardInsert(&g_sd, kSD_Inserted) == kStatus_Success)
+    /*if (SD_PollingCardInsert(&g_sd, kSD_Inserted) == kStatus_Success)
     {
         PRINTF("\r\nCard inserted.\r\n");
         /* power off card */
-        SD_SetCardPower(&g_sd, false);
+        //SD_SetCardPower(&g_sd, false);
         /* power on the card */
-        SD_SetCardPower(&g_sd, true);
+        /*SD_SetCardPower(&g_sd, true);
     }
     else
     {
@@ -150,4 +160,4 @@ static status_t sdcardWaitCardInsert(void)
     }
 
     return kStatus_Success;
-}
+}*/

@@ -17,6 +17,12 @@ RM := rm -rf
 -include source/image/subdir.mk
 -include source/gprintf/subdir.mk
 -include source/subdir.mk
+-include sdmmc/src/subdir.mk
+-include sdmmc/osa/subdir.mk
+-include sdmmc/host/subdir.mk
+-include fatfs/source/fsl_sd_disk/subdir.mk
+-include fatfs/source/fsl_ram_disk/subdir.mk
+-include fatfs/source/subdir.mk
 -include eiq/tensorflow-lite/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/subdir.mk
 -include eiq/tensorflow-lite/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/subdir.mk
 -include eiq/tensorflow-lite/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/subdir.mk
@@ -40,7 +46,9 @@ RM := rm -rf
 -include drivers/subdir.mk
 -include device/subdir.mk
 -include component/uart/subdir.mk
+-include component/osa/subdir.mk
 -include component/lists/subdir.mk
+-include component/gpio/subdir.mk
 -include board/subdir.mk
 -include objects.mk
 
